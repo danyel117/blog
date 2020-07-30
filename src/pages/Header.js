@@ -1,7 +1,8 @@
 import React from 'react';
 
+import Logo from "assets/img/Logo-negro.png"
 import '../assets/font/flaticon.css'
-const Landing = () => {
+const Header = () => {
     return ( 
         <header>
             <section className="header-icons-container">
@@ -15,7 +16,7 @@ const Landing = () => {
             </section>
             <nav>
                 <section className="nav-logo-container">
-                    <a href="/"><img src="" alt="logo de mi blog"></img></a>
+                    <a href="/"><img src={Logo} alt="logo de mi blog"></img></a>
                 </section>
                 <section className="profile-link">
                     <a href="/">Sobre Mí</a>
@@ -25,4 +26,4 @@ const Landing = () => {
      );
 }
  
-export default Landing;
+export default Header;
