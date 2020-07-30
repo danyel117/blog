@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
 .App {
   margin: 0;
   padding: 0;
@@ -68,4 +70,31 @@ nav .nav-logo-container img{
 nav .profile-link a{
   color: black;
   border-bottom: 1px solid;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url("assets/img/Cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main section{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.home-main-text{
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 10px;
+  color:white;
+  text-align: center;
+  font-family: 'Roboto mono', monospace;
 }
