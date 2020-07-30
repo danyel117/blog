@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from "react-router-dom"
 import NewsIMG from "assets/img/main-news-img.png"
 import Post1 from "assets/img/post-1.png"
 import Post2 from "assets/img/post-2.png"
@@ -24,7 +24,7 @@ const Blog = () => {
                         <div className="blogs-news-info-container">
                             <h2>Título del Post</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="/" className="blogs-button">Leer Más</a>
+                            <NavLink to="/blog" className="blogs-button">Leer Más</NavLink>
                         </div>
                     </div>
                 </section>
@@ -37,16 +37,13 @@ const Blog = () => {
                                     <img src={el} alt="Blog Post"></img>
                                     <p>Título del post</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <a href="/" className="blogs-button">Leer Más</a>
+                                    <NavLink to="/blog" className="blogs-button">Leer Más</NavLink>
                                 </article>
                             )
                         })}
                     </div>
                 </section>
             </main>
-            <footer>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </footer>
         </div>
      );
 }

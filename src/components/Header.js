@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from "react-router-dom"
 import Logo from "assets/img/Logo-negro.png"
 import '../assets/font/flaticon.css'
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
                     <a href="/"><img src={Logo} alt="logo de mi blog"></img></a>
                 </section>
                 <section className="profile-link">
-                    <a href="/">Sobre Mí</a>
+                    <NavLink to="/perfil">Sobre Mí</NavLink>
                 </section>
             </nav>
         </header>
